@@ -1,15 +1,116 @@
+
 .main {
 
 }
 .products-grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
 }
 .product-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 10px;
   margin-left: 10px;
 }
-.product-image {
-  width: 150px;
-  height: 100px;
+
+.product-name {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: 600; */
 }
+.product-name-p {
+  line-height: 24px;
+  height: 48px;
+  font-size: 16px;
+  color:  rgb(33, 33, 33);
+  margin-bottom: 0.5rem;
+}
+.product-image-container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.product-image {
+  width: 100%;
+  height: 150px;
+}
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.product-rating-stars {
+  width: 80px;
+  height: 17px;
+}
+.product-rating-count-p {
+  color: rgb(1, 124, 182);
+  font-size: 11px;
+  padding-left: 5px;
+  margin-top: auto;
+}
+.product-price-container {
+  margin-bottom: 0.5rem;
+}
+.product-price-currency {
+  font-size: 1rem;
+}
+.product-price-amount {
+  font-size: 1rem;
+}
+
+.quantity-selector {
+  padding: 3px 1px 3px 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+}
+.product-spacer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.added-to-cart-container {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+}
+.added-tick-image {
+  width: 0.9rem;
+  height: auto;
+}
+.added-to-cart-text {
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+  color: rgb(6, 125, 98);
+}
+.add-to-cart-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15%;
+}
+.add-to-cart {
+  width: 100%;
+  height: 33px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 18px;
+  border: none;
+  border-color: none;
+  background-color: rgb(255, 216, 20);
+  color: rgb(33, 33, 33);
+
+  transition: background-color 0.2s ease;
+}
+.add-to-cart:hover {
+  background-color: rgb(247, 202, 0);
+  box-shadow: 1px solid rgb(242, 194, 0);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
