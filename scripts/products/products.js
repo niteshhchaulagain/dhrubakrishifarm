@@ -2,32 +2,6 @@
 export let products = [
   {
    "id": "12345678",
-   "image": "",
-   "name": "",
-   "slug": "",
-   "category": "",
-   "subCategory": "",
-   "rating": {
-    "stars": 4.5,
-    "count": 87
-   },
-   "pricing": {
-    "basePrice": 40,
-    "salePrice": 35,
-    "priceUnit": "200gm",
-   },
-   "inventory": {
-    "sku": "SPN-PO-3LB",
-    "inStock": true,
-    "quantity": 45,
-    "su": "KG"
-   },
-   "keywords": [
-    
-   ]
-  },
-  {
-   "id": "12345678",
    "image": "rogar-plus.png",
    "name": "Rogar Plus 1 Liter",
    "slug": "rogar-plus",
@@ -40,39 +14,13 @@ export let products = [
    "pricing": {
     "basePrice": 1100,
     "salePrice": 1100,
-    "priceUnit": "/PC",
+    "priceUnit": "/piece",
    },
    "inventory": {
     "sku": "SPN-PO-3LB",
     "inStock": true,
     "quantity": 45,
-    "su": "PCS"
-   },
-   "keywords": [
-    
-   ]
-  },
-  {
-   "id": "12345678",
-   "image": "insect-trapper.png",
-   "name": "Insect Trapper 20Pcs - 1 PKT",
-   "slug": "insect-trapper",
-   "category": "Agriculture Items",
-   "subCategory": "Insecticides",
-   "rating": {
-    "stars": 5,
-    "count": 50
-   },
-   "pricing": {
-    "basePrice": 700,
-    "salePrice": 600,
-    "priceUnit": "/pkt",
-   },
-   "inventory": {
-    "sku": "SPN-PO-3LB",
-    "inStock": true,
-    "quantity": 50,
-    "su": "PKT"
+    "su": "piece"
    },
    "keywords": [
     
@@ -170,7 +118,7 @@ export let products = [
    "pricing": {
     "basePrice": 350,
     "salePrice": 350,
-    "priceUnit": "/KG",
+    "priceUnit": "/kg",
    },
    "inventory": {
     "sku": "SPN-SM-1KG",
@@ -222,7 +170,7 @@ export let products = [
    "pricing": {
     "basePrice": 300,
     "salePrice": 300,
-    "priceUnit": "/KG",
+    "priceUnit": "/kg",
    },
    "inventory": {
     "sku": "SPN-BM-1KG",
@@ -274,7 +222,7 @@ export let products = [
    "pricing": {
     "basePrice": 300,
     "salePrice": 250,
-    "priceUnit": "200gm",
+    "priceUnit": "/200gm",
    },
    "inventory": {
     "sku": "MSG-JUG-1LTR",
@@ -300,7 +248,7 @@ export let products = [
    "pricing": {
     "basePrice": 45,
     "salePrice": 35,
-    "priceUnit": "/pc",
+    "priceUnit": "/piece",
    },
    "inventory": {
     "sku": "TST-TB-120MM",
@@ -326,7 +274,7 @@ export let products = [
    "pricing": {
     "basePrice": 4000,
     "salePrice": 3500,
-    "priceUnit": "/pc",
+    "priceUnit": "/piece",
    },
    "inventory": {
     "sku": "DRL-MCN-1PC",
@@ -352,7 +300,7 @@ export let products = [
    "pricing": {
     "basePrice": 4000,
     "salePrice": 3500,
-    "priceUnit": "/pc",
+    "priceUnit": "/piece",
    },
    "inventory": {
     "sku": "ANG-GND-1PC",
@@ -378,7 +326,7 @@ export let products = [
    "pricing": {
     "basePrice": 170,
     "salePrice": 150,
-    "priceUnit": "250ml",
+    "priceUnit": "/250ml",
    },
    "inventory": {
     "sku": "HND-WSH-250ML",
@@ -404,7 +352,7 @@ export let products = [
    "pricing": {
     "basePrice": 120,
     "salePrice": 100,
-    "priceUnit": "100pcs",
+    "priceUnit": "/100pcs",
    },
    "inventory": {
     "sku": "DSP-GLV-100PCS",
@@ -418,13 +366,13 @@ export let products = [
   },
   {
    "id": "12343677",
-   "image": "",
+   "image": "face-mask.png",
    "name": "Face Mask",
    "slug": "face-mask",
    "category": "Lab & Mycology Supplies",
    "subCategory": "Mask",
    "rating": {
-    "stars": 5,
+    "stars": 3.5,
     "count": 20
    },
    "pricing": {
@@ -444,19 +392,19 @@ export let products = [
   },  
   {
    "id": "12345677",
-   "image": "",
+   "image": "oyster-mushroom-pickle.png",
    "name": "Oyster Mushroom Pickle Jar",
    "slug": "oyster-mushroom-pickle-jar",
    "category": "Processed Foods",
    "subCategory": "Preserves & Pickles",
    "rating": {
-    "stars": 4.9,
+    "stars": 3.9,
     "count": 300
    },
    "pricing": {
     "basePrice": 300,
     "salePrice": 250,
-    "priceUnit": "200gm",
+    "priceUnit": "/200gm",
    },
    "inventory": {
     "sku": "FOOD-PKL-500GM",
@@ -475,19 +423,19 @@ export let products = [
   },
   {
    "id": "12345678",
-   "image": "",
+   "image": "rubber-bands-zero-size.png",
    "name": "Rubber Bands (Zero Size) - 1KG PKT",
    "slug": "rubber-band-zero-size",
    "category": "Lab & Mycology Supplies",
    "subCategory": "Rubber",
    "rating": {
-    "stars": 4.8,
+    "stars": 2.5,
     "count": 150
    },
    "pricing": {
     "basePrice": 850,
     "salePrice": 790,
-    "priceUnit": "1KG",
+    "priceUnit": "/kg",
    },
    "inventory": {
     "sku": "SPN-PO-3LB",
@@ -507,3 +455,33 @@ export let products = [
    ]
   }
 ]
+
+/*
+format example
+{
+   "id": "12345678",
+   "image": "",
+   "name": "",
+   "slug": "",
+   "category": "",
+   "subCategory": "",
+   "rating": {
+    "stars": 4.5,
+    "count": 87
+   },
+   "pricing": {
+    "basePrice": 40,
+    "salePrice": 35,
+    "priceUnit": "200gm",
+   },
+   "inventory": {
+    "sku": "SPN-PO-3LB",
+    "inStock": true,
+    "quantity": 45,
+    "su": "KG"
+   },
+   "keywords": [
+    
+   ]
+  },
+*/
