@@ -1,0 +1,15 @@
+.main {
+
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+.product-container {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.product-image {
+  width: 150px;
+  height: 100px;
+}
