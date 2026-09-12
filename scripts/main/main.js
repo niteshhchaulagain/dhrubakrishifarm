@@ -1,16 +1,16 @@
 
 import '../main/main-nav.js';
-import { products } from '../products/products.js';
-import { ratingRoundOff } from '../main/utils.js';
+import { products } from '../../data/products.js';
+import { ratingRoundOff } from '../../utils/utils.js';
+import { cart, addToCart } from '../../data/cart.js';
 
-console.log(ratingRoundOff(products[1].rating.stars));
 function renderProducts() {
 
   let productsHTML = '';
 
   products.forEach((product) => {
     productsHTML += `
-      <div class="product-container" data-product-id=${product.id}>
+      <div class="product-container" data-product-id="${product.id}">
         <div class="product-image-container">
           <img class="product-image" src="/images/products/${product.image}" alt="">
         </div>
@@ -53,6 +53,16 @@ function renderProducts() {
   });
   const productGrid = document.querySelector('.js-product-grid');
   productGrid.innerHTML = productsHTML;
+
+  document.querySelectorAll('.add-to-cart')
+    .forEach((addToCartBtn) => {
+      addToCartBtn.addEventListener('click', () => {
+        const container = addToCartBtn.closest('.product-container');
+        const productId = container.dataset.productId;
+        const quantity = 1;
+        addToCart(productId, quantity);
+      })
+    });
 };
 
 renderProducts();
