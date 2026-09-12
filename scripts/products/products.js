@@ -8,8 +8,8 @@ export let products = [
    "category": "Agriculture Items",
    "subCategory": "Insecticides",
    "rating": {
-    "stars": 5,
-    "count": 87
+    "stars": 4.5,
+    "count": 35
    },
    "pricing": {
     "basePrice": 1100,
@@ -34,8 +34,8 @@ export let products = [
    "category": "Agriculture Items",
    "subCategory": "Insecticides",
    "rating": {
-    "stars": 5,
-    "count": 50
+    "stars": 4.5,
+    "count": 37
    },
    "pricing": {
     "basePrice": 700,
@@ -86,7 +86,7 @@ export let products = [
    "category": "Mushroom Seeds",
    "subCategory": "Oyster Mushroom Seed",
    "rating": {
-    "stars": 4.8,
+    "stars": 4,
     "count": 87
    },
    "pricing": {
@@ -112,7 +112,7 @@ export let products = [
    "category": "Mushroom Seeds",
    "subCategory": "Shitake Mushroom Seed",
    "rating": {
-    "stars": 4.9,
+    "stars": 4.8,
     "count": 20
    },
    "pricing": {
@@ -138,7 +138,7 @@ export let products = [
    "category": "Mushroom Seeds",
    "subCategory": "Milky Mushroom Seed",
    "rating": {
-    "stars": 4.8,
+    "stars": 4.5,
     "count": 200
    },
    "pricing": {
@@ -164,7 +164,7 @@ export let products = [
    "category": "Mushroom Seeds",
    "subCategory": "Button Mushroom Seed",
    "rating": {
-    "stars": 4.9,
+    "stars": 4.5,
     "count": 99
    },
    "pricing": {
@@ -190,7 +190,7 @@ export let products = [
    "category": "Lab & Mycology Supplies",
    "subCategory": "Culture Media Items",
    "rating": {
-    "stars": 5,
+    "stars": 4,
     "count": 20
    },
    "pricing": {
@@ -216,7 +216,7 @@ export let products = [
    "category": "Lab & Mycology Supplies",
    "subCategory": "Containers",
    "rating": {
-    "stars": 5,
+    "stars": 3.5,
     "count": 10
    },
    "pricing": {
@@ -242,7 +242,7 @@ export let products = [
    "category": "Lab & Mycology Supplies",
    "subCategory": "Test Tubes",
    "rating": {
-    "stars": 4.9,
+    "stars": 3.5,
     "count": 99
    },
    "pricing": {
@@ -268,7 +268,7 @@ export let products = [
    "category": "Lab & Mycology Supplies",
    "subCategory": "Glassware & Tools",
    "rating": {
-    "stars": 4.6,
+    "stars": 4.1,
     "count": 58
    },
    "pricing": {
@@ -294,7 +294,7 @@ export let products = [
    "category": "Lab & Mycology Supplies",
    "subCategory": "Glassware & Tools",
    "rating": {
-    "stars": 4.5,
+    "stars": 4.2,
     "count": 87
    },
    "pricing": {
