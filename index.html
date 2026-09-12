@@ -10,44 +10,100 @@
     <title>3cc</title>
   </head>
   <body>
-    <nav>
-      <ul class="sidebar">
-        <li class="js-hide-sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-
-      <ul class="navbar-second">
-        <li><button class="logo-img-btn hideOnMobile"><img class="logo-img" src="images/images/logo-dhurba-krishi-farm.png" alt=""></button></li>
-        <li class="js-show-sidebar menu-button">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-            </svg>
+    <nav aria-label="Main Navigation">
+      <div class="sidebar">
+        <a href="#"><img src="images/icons/account-logo.png" alt=""></a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Learn</a>
+        <a href="#">About Us</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="main-nav-bar">
+        <div class="div-logo-menu">
+          <div class="company-logo">
+            <a href="#" class="company-logo-a">
+              <img class="company-logo-img" src="images/images/logo-dhurba-krishi-farm.png" alt="">
+            </a>
+          </div>
+          <div class="menu-icon">
+            <a href="#" class="menu-icon-a">
+              <img class="menu-icon-img" src="images/icons/hamburger-menu-48.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="div-main-navigations">
+          <div class="navigation-links">
+            <a href="shop.html" target="_blank">Learn</a>
+            <a href="learn.html" target="_blank">Market</a>
+            <a href="about.html" target="_blank">Blogs</a>
+            <a href="login.html" target="_blank">About Us</a>
+          </div>
+          <search class="search-container">
+            <form action="/search-results" method="GET">
+              <input type="search" class="search-input-box" id="site-search" name="q" placeholder="Search Products" required>
+              <button class="search-button" type="submit">
+                <img class="search-button-img" src="images/icons/search.png" alt="">
+              </button>
+            </form>
+          </search>
+        </div>
+        <div class="div-cart-profile">
+          <a href="cart.html" target="_blank" class="cart-logo-img">
+            <img class="cart-icon" src="images/icons/cart-icon.png" alt="">
           </a>
-        </li>
-        <li class="hideOnMobile"><a href="#">Shop</a></li>
-        <li class="hideOnMobile"><a href="#">Learn</a></li>
-        <li class="hideOnMobile"><a href="#">About Us</a></li>
-        <li class="hideOnMobile"><a href="#">Login</a></li>
-        <li class="js-show-sidebar cart-button">
-          <a href="cart.html" target="_blank">
-            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z" fill="#333333"></path>
-              <path d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z" fill="#333333"></path>
-              <path d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z" fill="#333333"></path>
-            </svg>
+          <a href="#" class="account-profile-img">
+            <img src="images/icons/account-logo.png" alt="">
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="main">
       <div class="products-grid js-product-grid">
-        
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image" src="/images/products/angle-grinder.png" alt="">
+          </div>
+          <div class="product-name">
+            <p class="product-name-p">
+              Angle Grinder Gray Athletic Cotton
+            </p>
+          </div>
+          <div class="product-rating-container">
+            <img class="product-rating-stars" src="images/ratings/rating-50.png" alt="" >
+            <p class="product-rating-count-p">127</p>
+          </div>
+          <div class="product-price-container">
+            <span class="product-price-currency">रु. </span>
+            <span class="product-price-amount">1500<span class="standard-unit">/piece</span></span>
+            
+          </div>
+          <div class="product-quantity-container">
+            <div class="quantity-text">
+              <span class="quantity-span">Quantity: </span>
+            </div>
+            <div class="quantity-slider-container">
+              <div class="minus-quantity-slider align-quantity-divs"><button class="minus-button quantity-buttons"><img src="/images/icons/remove.png" alt=""></button></div>
+              <div class="align-quantity-divs"><input type="text" class="quantity-input"></div>
+              <div class="plus-quantity-slider align-quantity-divs"><button class="plus-button quantity-buttons"><img src="/images/icons/add.png" alt=""></button></div>
+            </div>
+          </div>
+          <div class="product-spacer"></div>
+          <div class="added-to-cart-container">
+            <img class="added-tick-image" src="images/icons/checkmark.png" alt="">
+            <p class="added-to-cart-text">Added</p>
+          </div>
+          <div class="add-to-cart-btn">
+            <button class="add-to-cart">
+              Add to Cart
+            </button>
+          </div>
+        </div>
       </div>
     </main>
 
