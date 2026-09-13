@@ -16,6 +16,9 @@
   .menu-icon {
     display: none;
   }
+  .sidebar {
+    display: none;
+  }
 }
 
 @media (max-width: 1600px) {

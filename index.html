@@ -12,8 +12,7 @@
   <body>
     <nav aria-label="Main Navigation">
       <div class="sidebar">
-        <a href="#"><img src="images/icons/account-logo.png" alt=""></a>
-        <a href="#">
+        <a href="#" class="js-hide-sidebar">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
           </svg>
         </a>
@@ -32,7 +31,7 @@
             </a>
           </div>
           <div class="menu-icon">
-            <a href="#" class="menu-icon-a">
+            <a href="#" class="menu-icon-a js-show-sidebar">
               <img class="menu-icon-img" src="images/icons/hamburger-menu-48.png" alt="">
             </a>
           </div>
@@ -113,6 +112,7 @@
       </div>
     </main>
 
+    <script src="scripts/main/main-nav.js"></script>
     <script type="module" src="scripts/main/main.js"></script>
   </body>
 </html>
