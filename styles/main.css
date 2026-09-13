@@ -15,4 +15,5 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: Roboto, Arial;
+  position: relative;
 } 

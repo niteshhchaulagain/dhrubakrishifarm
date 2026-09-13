@@ -1,22 +1,22 @@
 
-@media (max-width: 600px) {
-  .navbar-second > li:first-child {
+@media (max-width:800px) {
+  .navigation-links {
     display: none;
   }
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-    margin-right: auto;
+  .search-container-div {
+    margin: 2%;
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
+@media (min-width:801px) {
+  .company-logo {
+    display: flex;
   }
-} 
+  .menu-icon {
+    display: none;
+  }
+}
 
 @media (max-width: 1600px) {
   .products-grid {

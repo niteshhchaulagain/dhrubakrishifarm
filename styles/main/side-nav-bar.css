@@ -1,17 +1,20 @@
 
 .sidebar {
-  display: none;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .main-nav-bar {
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   height: 50px;
+  position: relative;
+  box-shadow:0 4px 6px -4px rgba(0, 0, 0, 0.2);
 }
-
-
 .div-logo-menu {
   height: 100%;
   width: 50px;
@@ -54,10 +57,10 @@
 .menu-icon-a {
   height: 100%;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 0.2s ease;
+  display: flex;
 }
 .menu-icon-img {
   width: 24px;
@@ -96,12 +99,19 @@
 }
 
 
-.search-container {
+
+.search-container-div {
+  display: flex;
+  height: 80%;
   flex: 2;
+  margin: 0 5%;
+  align-items: center;
+}
+.search-container {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80%;
+  height: 90%;
   border-radius: 20px;
   margin: 0 20px;
   overflow: hidden;
@@ -124,9 +134,6 @@
   border-radius: 20px 0px 0px 20px;
   font-size: 14px;
 }
-.search-input-box::placeholder {
-  
-}
 .search-input-box:focus {
   outline: none;
 }
@@ -143,30 +150,46 @@
   height: 100%;
   
 }
-.search-button:focus {
-  
-}
-
-
 
 
 .div-cart-profile {
-  width: 100px;
+  width: 80px;
   padding-right: 10px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.div-cart-profile  a {
+.cart-icon {
+  width: 30px;
+  height: auto;
+}
+.cart-logo-img {
   display: flex;
-  width: 50%;
+  justify-content: center;
   align-items: center;
 }
-.cart-icon {
-  width: 70%;
-  height: auto;
-  background-color: black;
-}
 .account-profile-img {
-  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-logo {
+  width: 27px;
   height: auto;
+}
+
+.cart-notification {
+  position: absolute;
+  top: 3px;
+  right: 52px;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  color: white;
+  background-color: #DF0000;
+  border-radius: 10px;
+  font-size: 12px;
 }
