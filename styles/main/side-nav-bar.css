@@ -221,16 +221,15 @@
 
 .cart-notification {
   position: absolute;
-  top: 3px;
-  right: 50px;
-  height: 18px;
-  width: 18px;
+  top: 5px;
+  right: 54px;
+  height: 16px;
+  width: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
   color: white;
   background-color: #DF0000;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 12px;
 }

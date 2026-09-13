@@ -2,7 +2,7 @@
 import '../main/main-nav.js';
 import { products } from '../../data/products.js';
 import { ratingRoundOff } from '../../utils/utils.js';
-import { cart, addToCart } from '../../data/cart.js';
+import { cart, addToCart, totalCartQuantity } from '../../data/cart.js';
 
 function renderProducts() {
 
@@ -61,8 +61,23 @@ function renderProducts() {
         const productId = container.dataset.productId;
         const quantity = 1;
         addToCart(productId, quantity);
+        cartItemFunction();
       })
     });
 };
 
 renderProducts();
+
+console.log(totalCartQuantity());
+
+function cartItemFunction() {
+  const qty = totalCartQuantity();
+  const cartNotification = document.querySelector('.cart-notification');
+  if (qty < 1) {
+    cartNotification.style.display = 'none';
+  } else {
+    cartNotification.style.display = 'flex';
+    cartNotification.textContent = totalCartQuantity();
+  }
+}
+cartItemFunction();
