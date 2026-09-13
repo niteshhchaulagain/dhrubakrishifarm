@@ -176,35 +176,53 @@
 
 
 .div-cart-profile {
-  width: 80px;
-  padding-right: 10px;
+  width: 90px;
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.cart-icon {
-  width: 30px;
-  height: auto;
+
+.cart-icon-div {
+  flex: 1;
+  height: 100%;
 }
 .cart-logo-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.cart-icon {
+  width: 30px;
+  height: auto;
+}
+
+.profile-pic-div {
+  flex: 1;
+  height: 100%;
 }
 .account-profile-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .account-logo {
   width: 27px;
   height: auto;
 }
 
+.div-cart-profile-a:hover {
+  background-color: rgb(228, 228, 228);
+}
+
 .cart-notification {
   position: absolute;
   top: 3px;
-  right: 52px;
+  right: 50px;
   height: 18px;
   width: 18px;
   display: flex;
