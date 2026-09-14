@@ -3,9 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cart/cart-navbar.css">
+    <link rel="stylesheet" href="styles/cart/cart.css">
+    <link rel="stylesheet" href="styles/cart/cart-media-query.css">
+
     <title>Cart</title>
   </head>
   <body>
+    <nav aria-label="Main Navigation">
+      <div class="sidebar">
+        <a href="#" class="js-hide-sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="market.html">Market</a>
+        <a href="blog.html">Blogs</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login/Register</a>
+      </div>
+      <div class="main-nav-bar">
+        <div class="div-logo-menu">
+          <div class="company-logo">
+            <a href="#" class="company-logo-a">
+              <img class="company-logo-img" src="images/images/logo-dhurba-krishi-farm.png" alt="">
+            </a>
+          </div>
+          <div class="menu-icon">
+            <a href="#" class="menu-icon-a js-show-sidebar">
+              <img class="menu-icon-img" src="images/icons/hamburger-menu-48.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="div-main-navigations">
+          <div class="navigation-links">
+            <a href="learn.html" target="_blank">Learn</a>
+            <a href="market.html" target="_blank">Market</a>
+            <a href="blog.html" target="_blank">Blogs</a>
+            <a href="about.html" target="_blank">About Us</a>
+          </div>
+        </div>  
+        <div class="div-cart-profile">
+          <div class="cart-icon-div">
+            <a href="cart.html" target="_blank" class="cart-logo-img div-cart-profile-a">
+              <img class="cart-icon" src="images/icons/shopping-cart-icon.png" alt="">
+            </a>
+          </div>
+          <div class="profile-pic-div">
+            <a href="login.html" target="_blank" class="account-profile-img div-cart-profile-a">
+              <img class="account-logo" src="images/icons/account-logo.png" alt="">
+            </a>
+            <div class="cart-notification">
+              0
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     
     <script type="module" src="data/cart.js"></script>
   </body>
