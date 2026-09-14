@@ -68,7 +68,6 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 .company-logo:hover {
   background-color: rgb(228, 228, 228);
@@ -83,14 +82,12 @@ body {
 .company-logo-img {
   width: 36px;
   height: 36px;
-  /* display: none; */
 }
 .menu-icon {
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .menu-icon:hover {
   background-color: rgb(228, 228, 228);
@@ -115,14 +112,14 @@ body {
   display: flex;
   height: 100%;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
 }
 .navigation-links {
-  flex: 1;
   display: flex;
-  height: 60%;
-  width: 60%;
+  height: 100%;
+  width: 400px;
   align-items: center;  
+  justify-content: center;
 }
 .navigation-links a {
   flex: 1;

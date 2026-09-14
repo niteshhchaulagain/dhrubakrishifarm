@@ -16,4 +16,5 @@ body {
   background-attachment: fixed;
   font-family: Roboto, Arial;
   position: relative;
+  max-width: 100vw;
 } 

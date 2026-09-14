@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/cart/cart-navbar.css">
     <link rel="stylesheet" href="styles/cart/cart.css">
     <link rel="stylesheet" href="styles/cart/cart-media-query.css">
@@ -38,6 +39,7 @@
         </div>
         <div class="div-main-navigations">
           <div class="navigation-links">
+            <a href="index.html" target="_blank">Home</a>
             <a href="learn.html" target="_blank">Learn</a>
             <a href="market.html" target="_blank">Market</a>
             <a href="blog.html" target="_blank">Blogs</a>
@@ -62,6 +64,92 @@
       </div>
     </nav>
     
-    <script type="module" src="data/cart.js"></script>
+    <main>
+      <div class="cart-label">
+        <div class="your-cart">
+          <h1>Your Cart</h1>
+          <h6>3 Items</h6>
+        </div>
+      </div>
+
+      <div class="cart-order-summary-container">
+        <div class="cart-items-container">
+          <div class="cart-item-container">
+            <div class="cart-item-image">
+              <img src="/images/products/chap-cutter-machine.jpg" alt="">
+            </div>
+            <div class="cart-items-details-container">
+              <div class="cart-item-details">
+                <p class="cart-item-name">Aalto adfasdf sdfa </p>
+                <p class="cart-item-overview">Oat Boucle, Walnut Legs</p>
+                <p class="cart-item-sku-number">SKU: LL-SF-AAL-OAT</p>
+                <div class="cart-in-stock-div">
+                  <img src="images/icons/icons-orange-check-mark.png" alt="">
+                  <p class="cart-item-instock">In Stock</p>
+                </div>
+              </div>
+              <div class="cart-features">
+                <div class="cart-item-add-sub-feature">
+                  <button class="cart-item-minus">
+                    <img src="images/icons/remove.png" alt="">
+                  </button>
+                  <input type="text" class="cart-item-input-box" placeholder="1">
+                  <button class="cart-item-add">
+                    <img src="images/icons/add.png" alt="">
+                  </button>
+                </div>
+                <button class="remove-cart-item-button">
+                  Remove
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-price-div">
+              <p class="cart-item-price">
+                $4000
+              </p>
+            </div>
+          </div>
+          <div class="cart-item-container">
+            <div class="cart-item-image">
+              <img src="/images/products/chap-cutter-machine.jpg" alt="">
+            </div>
+            <div class="cart-items-details-container">
+              <div class="cart-item-details">
+                <p class="cart-item-name">Aalto adfasdf sdfa </p>
+                <p class="cart-item-overview">Oat Boucle, Walnut Legs</p>
+                <p class="cart-item-sku-number">SKU: LL-SF-AAL-OAT</p>
+                <div class="cart-in-stock-div">
+                  <img src="images/icons/icons-orange-check-mark.png" alt="">
+                  <p class="cart-item-instock">In Stock</p>
+                </div>
+              </div>
+              <div class="cart-features">
+                <div class="cart-item-add-sub-feature">
+                  <button class="cart-item-minus">
+                    <img src="images/icons/remove.png" alt="">
+                  </button>
+                  <input type="text" class="cart-item-input-box" placeholder="1">
+                  <button class="cart-item-add">
+                    <img src="images/icons/add.png" alt="">
+                  </button>
+                </div>
+                <button class="remove-cart-item-button">
+                  Remove
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-price-div">
+              <p class="cart-item-price">
+                $4000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="order-summary">
+
+        </div>
+      </div>
+    </main>
+    <script type="module" src="scripts/cart/cart-js.js"></script>
   </body>
 </html>
