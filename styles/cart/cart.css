@@ -51,19 +51,16 @@ body {
 
 .cart-item-container {
   padding: 10px;
+  margin-right: 5px;
   display: flex;
-  max-height: 175px;
-
+  height: 185px;
   align-items: center;
   border-radius: 14px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   max-width: 550px;
-  margin-right: 10px;
 }
 .cart-item-image {
-
   width: 130px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,6 +159,10 @@ body {
   text-align: center;
   border: none;
   height: 100%;
+}
+.cart-item-input-box:focus {
+  border: none;
+  outline: none;
 }
 
 .cart-item-add {
