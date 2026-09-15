@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/cart/cart-navbar.css">
     <link rel="stylesheet" href="styles/cart/cart.css">
+    <link rel="stylesheet" href="styles/cart/cart-order-summary.css">
     <link rel="stylesheet" href="styles/cart/cart-media-query.css">
 
     <title>Cart</title>
@@ -89,7 +90,7 @@
                 </div>
               </div>
               <div class="cart-features">
-                <div class="cart-item-add-sub-feature">
+                <div class="cart-item-add-sub-feature inMobile">
                   <button class="cart-item-minus">
                     <img src="images/icons/remove.png" alt="">
                   </button>
@@ -98,14 +99,14 @@
                     <img src="images/icons/add.png" alt="">
                   </button>
                 </div>
-                <button class="remove-cart-item-button">
+                <button class="remove-cart-item-button inMobile">
                   Remove
                 </button>
               </div>
             </div>
             <div class="cart-item-price-div">
               <p class="cart-item-price">
-                $4000
+               रु 4000
               </p>
             </div>
           </div>
@@ -124,7 +125,7 @@
                 </div>
               </div>
               <div class="cart-features">
-                <div class="cart-item-add-sub-feature">
+                <div class="cart-item-add-sub-feature inMobile">
                   <button class="cart-item-minus">
                     <img src="images/icons/remove.png" alt="">
                   </button>
@@ -133,20 +134,97 @@
                     <img src="images/icons/add.png" alt="">
                   </button>
                 </div>
-                <button class="remove-cart-item-button">
+                <button class="remove-cart-item-button inMobile">
                   Remove
                 </button>
               </div>
             </div>
             <div class="cart-item-price-div">
               <p class="cart-item-price">
-                $4000
+               रु 4000
+              </p>
+            </div>
+          </div>
+          <div class="cart-item-container">
+            <div class="cart-item-image">
+              <img src="/images/products/chap-cutter-machine.jpg" alt="">
+            </div>
+            <div class="cart-items-details-container">
+              <div class="cart-item-details">
+                <p class="cart-item-name">Aalto adfasdf sdfa </p>
+                <p class="cart-item-overview">Oat Boucle, Walnut Legs</p>
+                <p class="cart-item-sku-number">SKU: LL-SF-AAL-OAT</p>
+                <div class="cart-in-stock-div">
+                  <img src="images/icons/icons-orange-check-mark.png" alt="">
+                  <p class="cart-item-instock">In Stock</p>
+                </div>
+              </div>
+              <div class="cart-features">
+                <div class="cart-item-add-sub-feature inMobile">
+                  <button class="cart-item-minus">
+                    <img src="images/icons/remove.png" alt="">
+                  </button>
+                  <input type="text" class="cart-item-input-box" placeholder="1">
+                  <button class="cart-item-add">
+                    <img src="images/icons/add.png" alt="">
+                  </button>
+                </div>
+                <button class="remove-cart-item-button inMobile">
+                  Remove
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-price-div">
+              <p class="cart-item-price">
+               रु 4000
               </p>
             </div>
           </div>
         </div>
         <div class="order-summary">
-
+          <div class="order-summary-heading">
+            <p>Order Summary</p>
+          </div>
+          <div class="order-summary-mid-items">
+            <div class="order-summary-mid-first-item">
+              <div class="subtotal">
+                <div>
+                  <span class="span-subtotal">Subtotal </span>
+                  <span class="span-subtotal-items">&nbsp;(3 Items)</span>
+                </div>
+                <p class="subtotal-amount">रु 4700</p>
+              </div>
+              <div class="shippin-charge-div">
+                <p class="shipping">Shipping</p>
+                <p class="shipping-charge">Free</p>
+              </div>
+              <div class="estimated-tax-div">
+                <p class="estimated-tax-text">Estimated Tax</p>
+                <p class="estimated-tax">रु 309.40</p>
+              </div>
+            </div>
+            <div class="order-summary-mid-second-item">
+              <input type="text" placeholder="Promo Code">
+              <button class="apply-button">
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="order-summary-last-items">
+            <div class="order-summary-last-items-first">
+              <p class="order-summary-last-item-total">Total</p>
+              <p class="order-summary-last-items-total-amount">$5069.40</p>
+            </div>
+            <div class="checkout-div">
+              <button class="proceed-to-checkout">
+                Proceed to Checkout
+              </button>
+            </div>
+            <div class="order-summary-message-div">
+              <img src="images/icons/shield.png" alt="">
+              <p class="secure-checkout">Secure checkout, encrypted payment</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
