@@ -88,7 +88,19 @@
 @media (min-width: 800px) {
   .order-summary {
     max-width: 550px;
+  }
+  .cart-order-summary-container {
+    column-gap: 20px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .order-summary {
+    max-width: 550px;
+    margin-right: 100px;
+  }
+  .cart-items-container {
+    margin-left: 100px;
   }
 }
 
