@@ -1,3 +1,4 @@
+import { products } from "./products.js";
 
 export let cart;
 
@@ -28,17 +29,17 @@ export function addToCart(productId, quantity) {
 
   saveToStorage();
   console.log(cart);
-}
+};
 
 function saveToStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
-}
+};
 
 export function totalCartQuantity() {
   return cart.reduce((sum, cart) => {
     return sum + cart.quantity;
   }, 0);
-}
+};
 
 
 

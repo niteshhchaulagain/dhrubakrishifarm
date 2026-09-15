@@ -1,5 +1,5 @@
 
-export let products = [
+export const products = [
   {
    "id": "3e73d39d-1437-4586-b855-7f54443b8036",
    "image": "rogar-plus.png",
@@ -455,6 +455,34 @@ export let products = [
    ]
   }
 ]
+
+export function getProduct(productId) {
+  return products.find(product => productId === product.id);
+};
+
+
+
+export function checkStock(productId) {
+  let matchingItem;
+  let  html = '';
+  products.forEach(product => {
+    if (productId === product.id) {
+      matchingItem = product;
+    }
+  });
+
+  if (matchingItem.inventory.quantity > 0) {
+    html = `
+      <img src="images/icons/icons-orange-check-mark.png" alt="">
+      <p class="cart-item-instock">In Stock</p>
+    `;
+  } else {
+    html = `<p class="cart-item-instock">In Stock</p>`;
+  };
+  return html;
+};
+
+
 
 /*
 format example
