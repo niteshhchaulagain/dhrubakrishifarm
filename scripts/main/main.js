@@ -1,14 +1,16 @@
 
 import '../main/main-nav.js';
-import { products } from '../../data/products.js';
+import { products, searchProducts } from '../../data/products.js';
 import { ratingRoundOff } from '../../utils/utils.js';
 import { cart, addToCart, totalCartQuantity } from '../../data/cart.js';
 
-function renderProducts() {
+const productItems = products;
+
+function renderProducts(productItems) {
 
   let productsHTML = '';
 
-  products.forEach((product) => {
+  productItems.forEach((product) => {
     productsHTML += `
       <div class="product-container" data-product-id="${product.id}">
         <div class="product-image-container">
@@ -66,9 +68,27 @@ function renderProducts() {
     });
 };
 
-renderProducts();
+renderProducts(productItems);
+renderSearchedProducts();
 
 console.log(totalCartQuantity());
+
+function renderSearchedProducts() {
+  const searchBox = document.querySelector('.search-button');
+  const searchInput = document.querySelector('.js-search-input-box');
+
+  searchBox.addEventListener('click', () => {
+    const searchItem = searchInput.value; 
+    if (!searchItem.trim()) {
+      renderProducts(productItems);
+    } else {
+      const productItems = searchProducts(searchItem);
+      renderProducts(productItems);
+    }
+    searchInput.value = "";
+  })
+};
+
 
 function cartItemFunction() {
   const qty = totalCartQuantity();
@@ -79,5 +99,5 @@ function cartItemFunction() {
     cartNotification.style.display = 'flex';
     cartNotification.textContent = totalCartQuantity();
   }
-}
+};
 cartItemFunction();

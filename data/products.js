@@ -482,6 +482,12 @@ export function checkStock(productId) {
   return html;
 };
 
+export function searchProducts(searchItem) {
+  const matchingItems = products.filter(product => (product.name.toLowerCase().replace(/\s+/g, '')).includes(searchItem.toLowerCase().replace(/\s+/g, '')));
+
+  return matchingItems;
+}
+
 
 
 /*

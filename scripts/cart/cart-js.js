@@ -1,6 +1,6 @@
 import './cart-navbar.js';
 import { cart, eachProductTotalAmount, removeFromCart, totalCartQuantity, updateCartQuantity, totalCartItemsAmount, getProductQuantity } from '../../data/cart.js';
-import { getProduct, checkStock } from "../../data/products.js";
+import { getProduct, checkStock, } from "../../data/products.js";
 
 function renderCart() {
 
