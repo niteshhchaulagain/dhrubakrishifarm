@@ -115,6 +115,10 @@
   font-size: 15px;
   padding-left: 15px;
 }
+input:focus {
+  border: none;
+  outline: none;
+}
 .apply-button {
   height: 100%;
   width: 100px;
