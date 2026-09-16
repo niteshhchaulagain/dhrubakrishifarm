@@ -2,8 +2,6 @@ import './cart-navbar.js';
 import { cart, eachProductTotalAmount, removeFromCart, totalCartQuantity, updateCartQuantity, totalCartItemsAmount, getProductQuantity } from '../../data/cart.js';
 import { getProduct, checkStock } from "../../data/products.js";
 
-console.log('hello')
-
 function renderCart() {
 
   let cartHTML = '';
@@ -24,6 +22,7 @@ function renderCart() {
             <p class="cart-item-sku-number">SKU: ${product.inventory.sku}</p>
             <div class="cart-in-stock-div">
               ${checkStock(product.id)}
+
             </div>
           </div>
           <div class="cart-features">

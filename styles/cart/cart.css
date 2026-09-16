@@ -95,7 +95,7 @@ body {
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 40px;
+  height: 45px;
 }
 .cart-item-overview {
   font-size: 12px;
@@ -103,8 +103,16 @@ body {
 .cart-item-sku-number {
   font-size: 12px;
 }
-.cart-in-stock-div{
+.cart-in-stock-div {
   margin-top: 3px;
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+}
+.show-quantity {
+  font-size: 12px;
+}
+.cart-in-stock{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +121,7 @@ body {
   border-radius: 15px;
   column-gap: 2px;
 }
-.cart-in-stock-div img {
+.cart-in-stock img {
   height: 12px;
 
 }

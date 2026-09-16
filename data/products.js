@@ -1,3 +1,4 @@
+import { productQuantity } from './cart.js';
 
 export const products = [
   {
@@ -463,21 +464,20 @@ export function getProduct(productId) {
 
 
 export function checkStock(productId) {
-  let matchingItem;
-  let  html = '';
-  products.forEach(product => {
-    if (productId === product.id) {
-      matchingItem = product;
-    }
-  });
+  let html = '';
+  let matchingItem = products.find(product => product.id === productId);
 
   if (matchingItem.inventory.quantity > 0) {
     html = `
-      <img src="images/icons/icons-orange-check-mark.png" alt="">
-      <p class="cart-item-instock">In Stock</p>
+      <div class="show-quantity">
+        Qty: ${productQuantity(productId)}
+      </div>
     `;
   } else {
-    html = `<p class="cart-item-instock">In Stock</p>`;
+    html = `<div class="cart-in-stock">
+        <img src="images/icons/icons-orange-check-mark.png" alt="">
+        <p class="cart-item-instock">Out Stock</p>
+      </div>`;
   };
   return html;
 };

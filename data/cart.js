@@ -83,3 +83,8 @@ export function eachProductTotalAmount(productId) {
 
   return matchingItem.quantity * matchingProduct.pricing.salePrice;
 }
+
+export function productQuantity(productId) {
+  let matchingItem = cart.find(cartItem => cartItem.id === productId);
+  return matchingItem.quantity;
+}
