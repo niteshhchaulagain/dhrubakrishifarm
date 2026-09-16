@@ -116,7 +116,7 @@ function renderOrderSummary() {
     <div class="order-summary-last-items">
       <div class="order-summary-last-items-first">
         <p class="order-summary-last-item-total">Total</p>
-        <p class="order-summary-last-items-total-amount">$${totalCartItemsAmount()}</p>
+        <p class="order-summary-last-items-total-amount">रु ${totalCartItemsAmount()}</p>
       </div>
       <div class="checkout-div">
         <button class="proceed-to-checkout">
