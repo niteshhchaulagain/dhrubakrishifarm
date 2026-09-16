@@ -180,7 +180,7 @@ body {
   height: 12px;
   width: 14px;
 }
-.remove-cart-item-button {
+.submit-cart-item-button {
   flex: 1;
   font-size: 14px;
   padding: 0px 15px;
@@ -192,17 +192,37 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-left: 5px;
 }
 .cart-item-price-div {
   margin-top: 14px;
   flex: 1;
   min-width: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-right: 10px;
   margin-bottom: auto;
   margin-left: auto;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
 }
 .cart-item-price {
   font-size: 18px;
+}
+.remove-item-button {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.remove-item-button img {
+  height: 18px;
+  width: 18px;
 }

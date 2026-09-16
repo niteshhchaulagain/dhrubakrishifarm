@@ -36,15 +36,18 @@ function renderCart() {
                 <img src="images/icons/add.png" alt="">
               </button>
             </div>
-            <button class="remove-cart-item-button inMobile">
-              Remove
+            <button class="submit-cart-item-button inMobile">
+              Submit
             </button>
           </div>
         </div>
         <div class="cart-item-price-div">
           <p class="cart-item-price">
-            रु ${product.pricing.basePrice}
+            रु 4000
           </p>
+          <button class="remove-item-button">
+            <img src="images/icons/close-icon.png" alt="">
+          </button>
         </div>
       </div>
     `;
